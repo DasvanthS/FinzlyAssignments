@@ -1,0 +1,11 @@
+<p>login-page works!</p>
+
+<label for="email">Enter Email</label>
+<input type="email" name="email" placeholder="email" required #email (keydown)="onKeyDown(email.value)">
+
+<label for="passowrd">Enter Password</label>
+<input type="password" name="password" placeholder="password" required #password (keydown)="onKeyDown(password.value)">
+
+<button (click)="onClick(email.value, password.value)">Login</button>
+
+{{result}}
